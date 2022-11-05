@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Veterinaria - ATENDIMENTO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+        header {
+
+            padding: 10px;
+            text-align: justify;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.236);
+            position: relative;
+            z-index: 2px;
+            font-size: 17px;
+            background-color: #050023;
+            color: #f1f1f1;
+            width: 100%;
+            height: 60px;
+            letter-spacing: 1px;
+
+
+        }
+
+        body {
+            background: #ffffff;
+            margin: 0;
+
+
+        }
+
+        .corpo {
+            width: 80%;
+            margin-left: 14%;
+
+
+
+        }
+
+        .titulo1 {
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            margin-top: 60px;
+
+
+        }
+
+        .meutexto {
+            display: table-cell;
+            float: left;
+            width: 850px;
+            margin-top: 4%;
+            margin-left: 350px;
+            background: #ffffff;
+            text-align: justify;
+
+
+        }
+
+        .divisoria {
+            color: #5093ba;
+            text-align: center;
+            font-size: 20px;
+
+
+        }
+
+
+
+        .cachorro>img {
+            background-color: rgb(255, 255, 255);
+
+            width: 100%;
+
+        }
+
+        .logo>img {
+            display: block;
+            max-width: 60px;
+            max-height: 70px;
+            position: absolute;
+            margin-top: -12px;
+            margin-left: 40px;
+
+        }
+
+
+        footer {
+
+            background-color: #00051d;
+            width: 100%;
+            min-height: 20px;
+            display: flex;
+        }
+
+        footer .box {
+            width: 340px;
+            min-height: 150px;
+            padding: 20px;
+
+            margin-left: 300px;
+        }
+
+
+        .box h4 {
+            color: rgb(0, 68, 255);
+            margin-bottom: 20px;
+
+            margin-left: 30px;
+        }
+
+        .box li {
+            margin: 10px 0px;
+            list-style: none;
+            box-sizing: border-box;
+
+
+        }
+
+        .box ul {
+            margin: 10px 0px;
+            list-style: none;
+
+        }
+
+        .box a {
+            color: rgb(0, 68, 255);
+            text-decoration: none;
+
+
+
+
+        }
+
+        .box a:hover {
+            color: #85cedc;
+            transition: 0.2s;
+            text-shadow: 0 0 20px #85cedc;
+
+
+
+        }
+
+
+
+        .left_area span {
+            color: #73e4fa;
+
+        }
+
+        .left_area h3 {
+            color: rgb(255, 255, 255);
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: 500;
+            margin-left: 150px;
+            margin-top: 5px;
+
+        }
+
+        .sidebar {
+            min-height: 123%;
+            width: 10%;
+
+            background-color: #E7E9EB;
+            overflow-x: hidden;
+            padding-top: 20px;
+            position: absolute;
+            display: block;
+
+        }
+
+        .sidebar h4 {
+            margin-top: 10px;
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            text-align: center;
+            display: block;
+
+        }
+
+        .fixado {
+
+            position: fixed;
+        }
+
+        .sidebar a {
+            margin-top: 30px;
+            display: block;
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            line-height: 2.5;
+            width: 148%;
+
+
+            padding: 2px 1px 1px 16px;
+
+        }
+
+        .sidebar a:hover {
+            background: #85cedc;
+            transition: all 0.2s ease-in-out;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+
+
+        }
+
+        img {
+            margin-left: 100px;
+            margin-top: 30px;
+            border-radius: 30px;
+            max-width: 420px;
+
+
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.corpo {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+
+            }
+        }
+
+        .logout_bnt {
+            padding: 5px;
+            background: #15b9da;
+            text-decoration: none;
+            float: right;
+            margin-top: -30px;
+            margin-right: 40px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 600px;
+            color: rgb(255, 255, 255);
+            transition: 0, 5s;
+
+        }
+
+        .logout_bnt:hover {
+            background: #ec3838;
+            color: rgb(0, 0, 0);
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        table {
+            display: table;
+            border-collapse: separate;
+            text-indent: initial;
+            width: 50%;
+            height: 100px;
+            box-sizing: border-box;
+            text-indent: initial;
+            margin-left: 25%;
+            margin-top: -20px;
+            border-color: rgb(222, 222, 222);
+        }
+
+        thead tr {
+            background: #23282c;
+            color: #fff;
+
+
+
+
+        }
+
+        .divisoria2 {
+            text-align: center;
+            color: #5093ba;
+
+        }
+
+        h1 {
+            color: #00051d;
+        }
+    </style>
+
+</head>
+
+<div id="geral">
+
+    <div class="header">
+        <header>
+
+            <div class="left_area">
+                <div class="logo">
+                    <img src="/home/components/logotipo.png" title="cachorrinho">
+                </div>
+                <h3>Clinica <span> Pet</span></h3>
+            </div>
+            <div class="right_area">
+                <a href="/home/sobre.html" class="logout_bnt">Sobre a clinica</a>
+            </div>
+        </header>
+    </div>
+
+    <body>
+
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="sidebar">
+            <div class="fixado">
+                <h4><strong>MENU</h4></strong>
+                <a href="/home/home.html"><i class="fa fa-fw fa-home"></i> Inicio</a>
+                <a href="/home/sobre.html"><i class="fa fa-fw fa-clock-o"></i> Horarios</a>
+                <a href="/home/contatos.html"><i class="fa fa-fw fa-envelope"></i> contatos</a>
+            </div>
+        </div>
+        <div class="meutexto">
+            <img src="/home/components/Pet shop tudo para seu pet cachorro e gato instagram post roxo (2).png">
+            <br>
+
+            <div>
+                <h2> Atendimento Clinico.</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos soluta iusto eius deleniti
+                dolores amet tempore minus ipsum accusamus earum cum, inventore necessitatibus ex. Quaerat doloremque
+                quibusdam obcaecati dicta!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos soluta iusto eius deleniti
+                dolores amet tempore minus ipsum accusamus earum cum, inventore necessitatibus ex. Quaerat doloremque
+                quibusdam obcaecati dicta!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos soluta iusto eius deleniti
+                dolores amet tempore minus ipsum accusamus earum cum, inventore necessitatibus ex. Quaerat doloremque
+                quibusdam obcaecati dicta!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos soluta iusto eius deleniti
+                dolores amet tempore minus ipsum accusamus earum cum, inventore necessitatibus ex. Quaerat doloremque
+                quibusdam obcaecati dicta!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quos soluta iusto eius deleniti
+                dolores amet tempore minus ipsum accusamus earum cum, inventore necessitatibus ex. Quaerat doloremque
+                quibusdam obcaecati dicta!</p>
+
+
+        </div>
+
+
+        <footer>
+
+
+
+            <div class="box">
+                <h4> Entre em contato</h4>
+                <ul>
+                    <li><a href="###"><i class="fa fa-fw fa-whatsapp"></i> (41) 9999-9999</a></li>
+                    <li><a href="###"><i class="fa fa-phone"></i> 3333-3333</a></li>
+                    <li><a href="###"><i class="fa fa-envelope-o"></i> clinicapet@exemplo.com</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h4>endereço </h4>
+                <ul>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> uma rua aleatoria</a></li>
+                </ul>
+                <br><br>
+            </div>
+
+        </footer>
+
+    </body>
+
+
+
+
+
+</html>
